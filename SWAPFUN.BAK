@@ -1,0 +1,43 @@
+//A C++ Programming using the concept of Function Overloading
+
+#include<iostream.h>
+#include<conio.h>
+
+void swap(int a, int b)
+{
+  int temp;
+  cout<<"\n Nos. before Swapping";
+  cout<<"\n a="<<a;
+  cout<<"\n b="<<b;
+  temp = a;
+  a=b;
+  b=temp;
+  cout<<"\n Nos. after Swapping";
+  cout<<"\n a="<<a;
+  cout<<"\n b="<<b;
+
+}
+void swap(char x, char y)
+{
+  char temp;
+  cout<<"\n\n\n Characters before Swapping";
+  cout<<"\n x="<<x;
+  cout<<"\n y="<<y;
+  temp = x;
+  x=y;
+  y=temp;
+  cout<<"\n Characters after Swapping";
+  cout<<"\n x="<<x;
+  cout<<"\n y="<<y;
+
+}
+
+void main()
+{
+  clrscr();
+
+  swap(10, 20);
+  swap('A', 'B');
+
+  getch();
+}
